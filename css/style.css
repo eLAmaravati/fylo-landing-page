@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+/* ----- Header ----- */
+.site-header {
+  padding: 50px 0;
+}
+.site-header__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.site-header__title h1 {
+  font-size: 2.3rem;
+}
+.site-header__form {
+  display: flex;
+}
+.site-header__form input {
+  flex: 3;
+  margin-right: 20px;
+}
+.site-header__form button {
+  flex: 1;
+}
+
+.section-cta {
+  background-color: #585989;
+}
+
+footer {
+  background-color: #070439;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}/*# sourceMappingURL=style.css.map */

@@ -1,73 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Googlefont -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+  <!-- Navigation Start -->
+  <nav class="navbar navbar-expand-lg navbar-light py-5">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo.svg" alt="Site Logo" width="100">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign In</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation End -->
 
-  Features
-  Team
-  Sign In
+  <!-- Header Area Start -->
+  <header class="container site-header">
+    <div class="row justify-content-between">
+      <div class="col-md-6 col-sm-12 site-header__title">
+        <h1 class="site-title">All your files in one secure location, accessible anywhere.</h1>
+        <p class="site-description">
+          Fylo stores your most important files in one secure location.
+          Access them wherever you need, share and collaborate with friends,
+          family, and co-workers.
+          Get Started</p>
+        <!-- Button -->
 
-  All your files in one secure location, accessible anywhere.
+        <form class="site-header__form">
+          <label for="fname" class="visually-hidden">First name:</label><br>
+          <input type="email" id="fname" value="Enter Your Email" class="form-control"><br><br>
+          <button type="submit" class="btn btn-primary">Get Started</button>
+        </form>
+        <!-- <div class="row g-3 align-items-center">
+          <div class="col-auto">
+            <label for="inputPassword6" class="col-form-label">Password</label>
+          </div>
+          <div class="col-auto">
+            <input type="email" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+          </div>
+          <div class="col-auto">
+            <span id="passwordHelpInline" class="form-text">
+              Must be 8-20 characters long.
+            </span>
+          </div>
+        </div> -->
+        <!-- End Button -->
+      </div>
+      <div class="col-md-5 col-sm-12">
+        <img src="./images/illustration-1.svg" alt="" class="img-fluid">
+      </div>
+    </div>
+  </header>
+  <!-- Header Area End -->
 
-  Fylo stores your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family, and co-workers.
+  <!-- Main Area Start -->
+  <main>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 col-sm-12">
+            <h2 class="section__title">
+              Stay productive, wherever you are
+            </h2>
 
-  Get Started
+            <p class="section__description">
+              Never let location be an issue when accessing your files. Fylo has you
+              covered for all of your file storage needs.
 
-  Stay productive, wherever you are
+              Securely share files and folders with friends, family and colleagues for
+              live collaboration. No email attachments required!
+            </p>
 
-  Never let location be an issue when accessing your files. Fylo has you 
-  covered for all of your file storage needs.
 
-  Securely share files and folders with friends, family and colleagues for 
-  live collaboration. No email attachments required!
+            See how Fylo works
 
-  See how Fylo works
+            <!-- Testimonial -->
+            <figure>
+              <blockquote class="blockquote">
+                <p> Fylo has improved our team productivity by an order of magnitude. Since
+                  making the switch our team has become a well-oiled collaboration machine.
+                </p>
+              </blockquote>
+              <figcaption>
+                <img src="./images/avatar-testimonial.jpg" alt="">
+                Kyle Burton <cite title="Source Title">Founder & CEO, Huddle</cite>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <img src="./images/illustration-2.svg" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
 
-  Fylo has improved our team productivity by an order of magnitude. Since 
-  making the switch our team has become a well-oiled collaboration machine.
+    <!-- CTA Section Start -->
+    <section class="section-cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 text-white">
+            <h2 class="section__title">Get early access today</h2>
+            <p class="section__description">It only takes a minute to sign up and our free starter tier is extremely
+              generous.
+              If you have any questions, our support team would be happy to help you.</p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            Get Started For Free
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA Section End -->
+  </main>
+  <!-- Main Area End -->
 
-  Kyle Burton
-  Founder & CEO, Huddle
-
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
-  If you have any questions, our support team would be happy to help you.
-
-  Get Started For Free
-
-  Phone: +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
-
+  <!-- Footer Area Start -->
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    <div class="container">
+      Phone: +1-543-123-4567
+      example@fylo.com
+
+      About Us
+      Jobs
+      Press
+      Blog
+
+      Contact Us
+      Terms
+      Privacy
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </div>
   </footer>
+  <!-- Footer Area End -->
 </body>
+
 </html>
