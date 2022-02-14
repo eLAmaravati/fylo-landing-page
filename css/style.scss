@@ -5,18 +5,65 @@
     box-sizing: border-box;
 }
 
+// Root
+// ## Colors
+
+// ### Primary
+
+// - Very Dark Blue: hsl(243, 87%, 12%)
+// - Desaturated Blue: hsl(238, 22%, 44%)
+
+// ### Accent
+
+// - Bright Blue: hsl(224, 93%, 58%)
+// - Moderate Cyan: hsl(170, 45%, 43%)
+
+// ### Neutral
+
+// - Light Grayish Blue: hsl(240, 75%, 98%)
+// - Light Gray: hsl(0, 0%, 75%)
+
+$darkBlue: hsl(243, 87%, 12%);
+$desBlue: hsl(238, 22%, 44%);
+$blue: hsl(224, 93%, 58%);
+$cyan: hsl(170, 45%, 43%);
+$lightBlue: hsl(240, 75%, 98%);
+$lightGray: hsl(0, 0%, 75%);
+
+$openSans: 'Open Sans',
+sans-serif;
+$raleway: 'Raleway',
+sans-serif;
+
 // Global CSS
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $openSans;
     font-weight: 400;
+    color: $darkBlue;
 }
 
 h1,
 h2,
 h3,
-h4 {
-    font-family: 'Raleway', sans-serif;
+h4,
+btn {
+    font-family: $raleway;
     font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ----- Button ----- */
+.btn-submit {
+    background-color: $blue;
+    color: #fff;
+
+    &:hover {
+        color: #fff;
+        opacity: 0.7;
+    }
 }
 
 /* ----- Header ----- */
@@ -30,6 +77,13 @@ h4 {
 
         h1 {
             font-size: 2.3rem;
+            color: $darkBlue;
+            line-height: 1.5em;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5em;
         }
     }
 
@@ -37,8 +91,10 @@ h4 {
         display: flex;
 
         input {
-            flex: 3;
+            flex: 2;
             margin-right: 20px;
+            padding: 5px 20px;
+            color: $lightGray;
         }
 
         button {
@@ -47,20 +103,62 @@ h4 {
     }
 }
 
+// Section Feature
+.section-feature {
+    padding: 100px 0;
+    background-image: url(./../images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top -100px right 0;
+    background-color: hsl(240, 75%, 98%);
+}
+
+
+
 
 // Section CTA
 .section-cta {
+    padding: 100px 0;
     background-color: hsl(238, 22%, 44%);
+}
+
+figure {
+    margin-top: 2em;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 2em;
+
+    p {
+        font-size: 12px;
+    }
+
+
+}
+
+figcation {
+    img {
+        border-radius: 50%;
+    }
 }
 
 // Footer
 footer {
-    background-color: hsl(243, 87%, 12%);
+    background-color: $darkBlue;
+    padding: 100px 0 20px;
+
+    a {
+        color: #fff;
+
+        &:hover {
+            color: $blue;
+        }
+    }
 }
 
 .attribution {
     font-size: 11px;
     text-align: center;
+    color: $lightBlue;
 }
 
 .attribution a {

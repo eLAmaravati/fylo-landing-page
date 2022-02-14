@@ -66,8 +66,8 @@
 
         <form class="site-header__form">
           <label for="fname" class="visually-hidden">First name:</label><br>
-          <input type="email" id="fname" value="Enter Your Email" class="form-control"><br><br>
-          <button type="submit" class="btn btn-primary">Get Started</button>
+          <input type="email" id="fname" value="Enter Your Email"><br><br>
+          <button type="submit" class="btn btn-submit shadow">Get Started</button>
         </form>
         <!-- <div class="row g-3 align-items-center">
           <div class="col-auto">
@@ -93,7 +93,7 @@
 
   <!-- Main Area Start -->
   <main>
-    <section>
+    <section class="section-feature">
       <div class="container">
         <div class="row">
           <div class="col-md-5 col-sm-12">
@@ -108,10 +108,7 @@
               Securely share files and folders with friends, family and colleagues for
               live collaboration. No email attachments required!
             </p>
-
-
-            See how Fylo works
-
+            <a href="#">See how Fylo works <span><img src="./images/icon-arrow.svg" alt=""></span></a>
             <!-- Testimonial -->
             <figure>
               <blockquote class="blockquote">
@@ -120,7 +117,7 @@
                 </p>
               </blockquote>
               <figcaption>
-                <img src="./images/avatar-testimonial.jpg" alt="">
+                <img src="./images/avatar-testimonial.jpg" alt="" class="rounded-circle" width="50">
                 Kyle Burton <cite title="Source Title">Founder & CEO, Huddle</cite>
               </figcaption>
             </figure>
@@ -143,7 +140,9 @@
               If you have any questions, our support team would be happy to help you.</p>
           </div>
           <div class="col-md-6 col-sm-12">
-            Get Started For Free
+            <form action="">
+              Get Started For Free
+            </form>
           </div>
         </div>
       </div>
@@ -155,21 +154,43 @@
   <!-- Footer Area Start -->
   <footer>
     <div class="container">
-      Phone: +1-543-123-4567
-      example@fylo.com
+      <div class="row text-white">
+        <div class="col-md-3 col-sm-12">
+          <ul class="list-unstyled">
+            <li><span class="pe-2"><img src="./images/icon-phone.svg" alt=""></span> +1-543-123-4567</li>
+            <li><span class="pe-2"><img src="./images/icon-email.svg" alt=""></span>example@fylo.com</li>
+          </ul>
+        </div>
 
-      About Us
-      Jobs
-      Press
-      Blog
-
-      Contact Us
-      Terms
-      Privacy
-      <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
-      </p>
+        <div class="col-md-3 col-sm-12">
+          <ul class="list-unstyled">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-12">
+          Contact Us
+          Terms
+          Privacy
+        </div>
+        <div class="col-md-3 col-sm-12">
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-facebook"
+              viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+            </svg></span>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-12">
+          <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="#">Your Name Here</a>.
+          </p>
+        </div>
+      </div>
     </div>
   </footer>
   <!-- Footer Area End -->
