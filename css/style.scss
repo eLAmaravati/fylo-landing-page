@@ -6,23 +6,6 @@
 }
 
 // Root
-// ## Colors
-
-// ### Primary
-
-// - Very Dark Blue: hsl(243, 87%, 12%)
-// - Desaturated Blue: hsl(238, 22%, 44%)
-
-// ### Accent
-
-// - Bright Blue: hsl(224, 93%, 58%)
-// - Moderate Cyan: hsl(170, 45%, 43%)
-
-// ### Neutral
-
-// - Light Grayish Blue: hsl(240, 75%, 98%)
-// - Light Gray: hsl(0, 0%, 75%)
-
 $darkBlue: hsl(243, 87%, 12%);
 $desBlue: hsl(238, 22%, 44%);
 $blue: hsl(224, 93%, 58%);
@@ -55,6 +38,11 @@ a {
     text-decoration: none;
 }
 
+p {
+    font-size: 18px;
+    line-height: 1.7em;
+}
+
 /* ----- Button ----- */
 .btn-submit {
     background-color: $blue;
@@ -66,9 +54,20 @@ a {
     }
 }
 
+.btn-text {
+    color: $cyan;
+    font-size: 18px;
+    text-decoration: underline;
+
+    &:hover {
+        color: $cyan;
+        opacity: 0.7;
+    }
+}
+
 /* ----- Header ----- */
 .site-header {
-    padding: 50px 0;
+    padding: 50px 0 100px;
 
     &__title {
         display: flex;
@@ -105,12 +104,10 @@ a {
 
 // Section Feature
 .section-feature {
-    padding: 100px 0;
-    background-image: url(./../images/bg-curve-desktop.svg);
+    padding: 100px 0 100px;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: top -100px right 0;
-    background-color: hsl(240, 75%, 98%);
+    background-color: $lightBlue;
 }
 
 
@@ -127,15 +124,16 @@ figure {
     background-color: #fff;
     border-radius: 20px;
     padding: 2em;
+    width: 65%;
 
     p {
-        font-size: 12px;
+        font-size: 14px;
     }
-
-
 }
 
-figcation {
+figcaption {
+    font-size: 12px;
+
     img {
         border-radius: 50%;
     }
@@ -146,12 +144,22 @@ footer {
     background-color: $darkBlue;
     padding: 100px 0 20px;
 
+    color: $lightBlue;
+
     a {
-        color: #fff;
+        color: $lightBlue;
 
         &:hover {
             color: $blue;
         }
+    }
+}
+
+.social-media {
+    li {
+        border: 1px solid #fff;
+        border-radius: 50%;
+        padding: 5px 10px;
     }
 }
 
@@ -163,4 +171,18 @@ footer {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+
+/* ---- Responsive ----- */
+@media (max-width: 375px) {
+    .bg-desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 375.98px) {
+    .bg-mobile {
+        display: none;
+    }
 }

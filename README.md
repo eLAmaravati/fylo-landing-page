@@ -43,8 +43,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/eLAmaravati/fylo-landing-page/settings/pages](https://github.com/eLAmaravati/fylo-landing-page/settings/pages)
+- Live Site URL: [https://elamaravati.github.io/fylo-landing-page/](https://elamaravati.github.io/fylo-landing-page/)
 
 ## My process
 
@@ -95,7 +95,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [5 PROPERTI CSS AJAIB UNTUK WEB DESIGNER](https://www.youtube.com/watch?v=dYoQyjpKk18&t=2203s) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**

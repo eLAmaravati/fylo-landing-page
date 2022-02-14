@@ -23,6 +23,11 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: 18px;
+  line-height: 1.7em;
+}
+
 /* ----- Button ----- */
 .btn-submit {
   background-color: #3065f8;
@@ -33,9 +38,19 @@ a {
   opacity: 0.7;
 }
 
+.btn-text {
+  color: #3c9f8f;
+  font-size: 18px;
+  text-decoration: underline;
+}
+.btn-text:hover {
+  color: #3c9f8f;
+  opacity: 0.7;
+}
+
 /* ----- Header ----- */
 .site-header {
-  padding: 50px 0;
+  padding: 50px 0 100px;
 }
 .site-header__title {
   display: flex;
@@ -65,11 +80,9 @@ a {
 }
 
 .section-feature {
-  padding: 100px 0;
-  background-image: url(./../images/bg-curve-desktop.svg);
+  padding: 100px 0 100px;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top -100px right 0;
   background-color: #f6f6fe;
 }
 
@@ -83,24 +96,35 @@ figure {
   background-color: #fff;
   border-radius: 20px;
   padding: 2em;
+  width: 65%;
 }
 figure p {
-  font-size: 12px;
+  font-size: 14px;
 }
 
-figcation img {
+figcaption {
+  font-size: 12px;
+}
+figcaption img {
   border-radius: 50%;
 }
 
 footer {
   background-color: #070439;
   padding: 100px 0 20px;
+  color: #f6f6fe;
 }
 footer a {
-  color: #fff;
+  color: #f6f6fe;
 }
 footer a:hover {
   color: #3065f8;
+}
+
+.social-media li {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 5px 10px;
 }
 
 .attribution {
@@ -111,4 +135,16 @@ footer a:hover {
 
 .attribution a {
   color: #3e52a3;
+}
+
+/* ---- Responsive ----- */
+@media (max-width: 375px) {
+  .bg-desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 375.98px) {
+  .bg-mobile {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
