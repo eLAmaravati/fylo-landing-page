@@ -43,7 +43,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [https://github.com/eLAmaravati/fylo-landing-page/settings/pages](https://github.com/eLAmaravati/fylo-landing-page/settings/pages)
+- Solution URL: [https://github.com/eLAmaravati/fylo-landing-page/](https://github.com/eLAmaravati/fylo-landing-page/)
 - Live Site URL: [https://elamaravati.github.io/fylo-landing-page/](https://elamaravati.github.io/fylo-landing-page/)
 
 ## My process
