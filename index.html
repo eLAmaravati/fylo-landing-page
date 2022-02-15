@@ -26,16 +26,16 @@
 
 <body>
   <!-- Navigation Start -->
-  <nav class="navbar navbar-expand-lg navbar-light py-5">
+  <nav class="navbar py-5">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="./images/logo.svg" alt="Site Logo" width="100">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      </button> -->
+      <div class="justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Features</a>
@@ -64,10 +64,10 @@
           Get Started</p>
         <!-- Button -->
 
-        <form class="site-header__form">
-          <label for="email" class="visually-hidden">Email Address:</label>
-          <input type="email" id="email" value="Enter Your Email">
-          <button type="submit" class="btn btn-submit shadow">Get Started</button>
+        <form class="site-header__form form">
+          <label for="email" class="visually-hidden form__label">Email Address:</label>
+          <input type="email" id="email" value="Enter Your Email" class="form__input">
+          <button type="submit" class="btn shadow form__button">Get Started</button>
         </form>
       </div>
       <div class="col-md-6 col-sm-12 col-image">
@@ -100,11 +100,9 @@
             </h2>
             <p class="section__description">
               Never let location be an issue when accessing your files. Fylo has you
-              covered for all of your file storage needs.
-              <br>
-              Securely share files and folders with friends, family and colleagues for
-              live collaboration. No email attachments required!
-            </p>
+              covered for all of your file storage needs.</p>
+            <p class="section__description">Securely share files and folders with friends, family and colleagues for
+              live collaboration. No email attachments required!</p>
             <a href="#" class="btn-text" role="button">See how Fylo works <span><img src="./images/icon-arrow.svg"
                   alt=""></span></a>
             <!-- Testimonial -->
@@ -120,7 +118,7 @@
               </figcaption>
             </figure>
           </div>
-          <div class="col-md-5 offset-1 col-sm-12 col-image">
+          <div class="col-md-5 offset-md-1 col-sm-12 col-image">
             <img src="./images/illustration-2.svg" alt="" class="img-fluid">
           </div>
         </div>
@@ -138,13 +136,10 @@
               If you have any questions, our support team would be happy to help you.</p>
           </div>
           <div class="col-md-6 col-sm-12">
-            <form class="site-header__form">
-              <label for="fname" class="visually-hidden">First name:</label><br>
-              <input type="email" id="fname" value="Enter Your Email"><br><br>
-              <button type="submit" class="btn btn-submit shadow">Get Started</button>
-            </form>
-            <form action="">
-              Get Started For Free
+            <form class="section-cta__form form">
+              <label for="email" class="visually-hidden form__label">Email Address:</label>
+              <input type="email" id="email" value="email@example.com" class="form__input"><br>
+              <button type="submit" class="btn shadow form__button">Get Started for Free</button>
             </form>
           </div>
         </div>
@@ -227,12 +222,17 @@
           </ul>
         </div>
       </div>
-      <div class="row mt-5">
+      <div class="row mt-5 attribution-row">
         <div class="col-12">
           <p class="attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-            Coded by <a href="#">Your Name Here</a>.
+            Coded by <a href="https://www.langitamaravati.com" target="_blank">Langit Amaravati</a>.
           </p>
+          <a href="#" role="button" class="btn-to-top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+            </svg></a>
         </div>
       </div>
     </div>

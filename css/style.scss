@@ -29,7 +29,8 @@ h1,
 h2,
 h3,
 h4,
-btn {
+button,
+.btn {
     font-family: $raleway;
     font-weight: 700;
 }
@@ -41,6 +42,7 @@ a {
 p {
     font-size: 18px;
     line-height: 1.7em;
+    margin-bottom: 0.75em;
 }
 
 .bg-desktop,
@@ -49,14 +51,28 @@ p {
     overflow: hidden;
 }
 
-/* ----- Button ----- */
-.btn-submit {
-    background-color: $blue;
-    color: #fff;
-
-    &:hover {
+/* ----- Button & Form ----- */
+.form {
+    &__button {
+        font-family: $raleway;
+        font-weight: bold;
+        letter-spacing: 1px;
+        background-color: $blue;
         color: #fff;
-        opacity: 0.7;
+        padding: 15px 20px;
+        border: 2px solid $blue;
+
+        &:hover {
+            color: #fff;
+            background-color: hsla(224, 93%, 75%);
+            border: 2px solid hsla(224, 93%, 75%);
+        }
+    }
+
+    &__input {
+        margin-right: 20px;
+        padding: 15px 20px;
+        color: $lightGray;
     }
 }
 
@@ -71,9 +87,40 @@ p {
     }
 }
 
+.attribution-row {
+    position: relative;
+}
+
+.btn-to-top {
+    background-color: $lightBlue;
+    color: $darkBlue;
+    padding: 15px 10px;
+    border-radius: 7px;
+    opacity: 0.7;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+/* ----- Navigation ----- */
+.nav-link {
+    font-family: $raleway;
+    color: $darkBlue;
+
+    &:hover {
+        color: hsla(224, 93%, 75%);
+    }
+}
+
+
 /* ----- Header ----- */
 .site-header {
-    padding: 50px 0 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
 
     &__title {
         display: flex;
@@ -81,7 +128,7 @@ p {
         justify-content: center;
 
         h1 {
-            font-size: 2.3rem;
+            font-size: 30px;
             color: $darkBlue;
             line-height: 1.5em;
         }
@@ -91,26 +138,12 @@ p {
             line-height: 1.5em;
         }
     }
-
-    &__form {
-        display: flex;
-
-        input {
-            flex: 2;
-            margin-right: 20px;
-            padding: 5px 20px;
-            color: $lightGray;
-        }
-
-        button {
-            flex: 1;
-        }
-    }
 }
 
 // Section Feature
 .section-feature {
-    padding: 100px 0 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-repeat: no-repeat;
     background-size: contain;
     background-color: $lightBlue;
@@ -121,7 +154,6 @@ figure {
     background-color: #fff;
     border-radius: 20px;
     padding: 2em;
-    // width: 65%;
 
     p {
         font-size: 14px;
@@ -141,6 +173,25 @@ figcaption {
 .section-cta {
     padding: 100px 0;
     background-color: hsl(238, 22%, 44%);
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            width: 100%;
+            padding: 12px 20px;
+            color: $lightGray;
+            border-radius: 3px;
+            border: none;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 50%;
+            padding: 15px 20px;
+        }
+    }
 }
 
 
@@ -156,7 +207,7 @@ footer {
         color: $lightBlue;
 
         &:hover {
-            color: $blue;
+            color: hsla(224, 93%, 75%);
         }
     }
 }
@@ -176,7 +227,7 @@ footer {
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(224, 93%, 75%);
 }
 
 
@@ -194,6 +245,33 @@ footer {
 }
 
 @media (max-width: 767.98px) {
+
+    // Navbar
+    .navbar-nav {
+        flex-direction: row;
+
+        li:nth-child(2) {
+            padding: 0 7px;
+        }
+    }
+
+    // Header {
+    .site-header__form {
+        display: flex;
+        flex-flow: column wrap;
+
+        .form__input {
+            margin: 30px 0 20px;
+        }
+    }
+
+    .section-cta__form .form {
+        width: 70%;
+
+        // &__button {
+        //     width: 100%;
+        // }
+    }
 
     // Section Feature
     .col-image {
@@ -215,6 +293,29 @@ footer {
     figure {
         width: 90%;
         margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+// Tablet
+@media (min-width: 768px) {
+
+    // Navbar
+    .navbar-nav {
+        flex-direction: row;
+
+        li:nth-child(2) {
+            padding: 0 7px;
+        }
+    }
+}
+
+// Desktop
+@media (min-width: 992px) {
+
+    // Blockquote
+    figure {
+        width: 65%;
         margin-top: 20px;
     }
 }
