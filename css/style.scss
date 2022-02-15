@@ -43,6 +43,12 @@ p {
     line-height: 1.7em;
 }
 
+.bg-desktop,
+.bg-mobile {
+    width: 100%;
+    overflow: hidden;
+}
+
 /* ----- Button ----- */
 .btn-submit {
     background-color: $blue;
@@ -110,21 +116,12 @@ p {
     background-color: $lightBlue;
 }
 
-
-
-
-// Section CTA
-.section-cta {
-    padding: 100px 0;
-    background-color: hsl(238, 22%, 44%);
-}
-
 figure {
     margin-top: 2em;
     background-color: #fff;
     border-radius: 20px;
     padding: 2em;
-    width: 65%;
+    // width: 65%;
 
     p {
         font-size: 14px;
@@ -138,6 +135,15 @@ figcaption {
         border-radius: 50%;
     }
 }
+
+
+// Section CTA
+.section-cta {
+    padding: 100px 0;
+    background-color: hsl(238, 22%, 44%);
+}
+
+
 
 // Footer
 footer {
@@ -184,5 +190,31 @@ footer {
 @media screen and (min-width: 375.98px) {
     .bg-mobile {
         display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    // Section Feature
+    .col-image {
+        order: 1;
+    }
+
+    .col-content {
+        order: 2;
+    }
+
+    // Centering Element
+    .site-header__title,
+    .section__title,
+    .section-cta .section__description {
+        text-align: center;
+    }
+
+    // Blockquote
+    figure {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
     }
 }

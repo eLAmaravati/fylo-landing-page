@@ -28,6 +28,12 @@ p {
   line-height: 1.7em;
 }
 
+.bg-desktop,
+.bg-mobile {
+  width: 100%;
+  overflow: hidden;
+}
+
 /* ----- Button ----- */
 .btn-submit {
   background-color: #3065f8;
@@ -86,17 +92,11 @@ p {
   background-color: #f6f6fe;
 }
 
-.section-cta {
-  padding: 100px 0;
-  background-color: #585989;
-}
-
 figure {
   margin-top: 2em;
   background-color: #fff;
   border-radius: 20px;
   padding: 2em;
-  width: 65%;
 }
 figure p {
   font-size: 14px;
@@ -107,6 +107,11 @@ figcaption {
 }
 figcaption img {
   border-radius: 50%;
+}
+
+.section-cta {
+  padding: 100px 0;
+  background-color: #585989;
 }
 
 footer {
@@ -146,5 +151,26 @@ footer a:hover {
 @media screen and (min-width: 375.98px) {
   .bg-mobile {
     display: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .col-image {
+    order: 1;
+  }
+
+  .col-content {
+    order: 2;
+  }
+
+  .site-header__title,
+.section__title,
+.section-cta .section__description {
+    text-align: center;
+  }
+
+  figure {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

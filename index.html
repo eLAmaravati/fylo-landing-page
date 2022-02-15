@@ -55,7 +55,7 @@
   <!-- Header Area Start -->
   <header class="container site-header">
     <div class="row justify-content-between">
-      <div class="col-md-6 col-sm-12 site-header__title pe-md-5">
+      <div class="col-md-6 col-sm-12 site-header__title pe-md-5 col-content">
         <h1 class="site-title">All your files in one secure location, accessible anywhere.</h1>
         <p class="site-description">
           Fylo stores your most important files in one secure location.
@@ -69,22 +69,8 @@
           <input type="email" id="email" value="Enter Your Email">
           <button type="submit" class="btn btn-submit shadow">Get Started</button>
         </form>
-        <!-- <div class="row g-3 align-items-center">
-          <div class="col-auto">
-            <label for="inputPassword6" class="col-form-label">Password</label>
-          </div>
-          <div class="col-auto">
-            <input type="email" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
-          </div>
-          <div class="col-auto">
-            <span id="passwordHelpInline" class="form-text">
-              Must be 8-20 characters long.
-            </span>
-          </div>
-        </div> -->
-        <!-- End Button -->
       </div>
-      <div class="col-md-6 col-sm-12">
+      <div class="col-md-6 col-sm-12 col-image">
         <img src="./images/illustration-1.svg" alt="" class="img-fluid">
       </div>
     </div>
@@ -95,34 +81,12 @@
   <main>
 
     <!-- Divider or Whatever -->
-    <div class="bg-desktop">
-      <svg width="1440" height="114" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <defs>
-          <path id="a" d="M0 0h1440v114H0z" />
-        </defs>
-        <g fill="none" fill-rule="evenodd">
-          <mask id="b" fill="#fff">
-            <use xlink:href="#a" />
-          </mask>
-          <path d="M0 72.728C318.801 24.243 558.801 0 720 0c161.199 0 401.199 24.243 720 72.728v765.146H0V72.728z"
-            fill="hsl(240, 75%, 98%)" mask="url(#b)" />
-        </g>
-      </svg>
+    <div class="bg-desktop overflow-hidden">
+      <img src="./images/bg-curve-desktop.svg" alt="">
     </div>
 
-    <div class="bg-mobile">
-      <svg width="375" height="53" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <defs>
-          <path id="a" d="M0 0h375v53H0z" />
-        </defs>
-        <g fill="none" fill-rule="evenodd">
-          <mask id="b" fill="#fff">
-            <use xlink:href="#a" />
-          </mask>
-          <path d="M0 33.395C83.021 11.132 145.521 0 187.5 0 229.479 0 291.979 11.132 375 33.395V961H0V33.395z"
-            fill="#F8F8FE" mask="url(#b)" />
-        </g>
-      </svg>
+    <div class="bg-mobile overflow-hidden">
+      <img src="./images/bg-curve-mobile.svg" alt="">
     </div>
     <!-- Divider End -->
 
@@ -130,11 +94,10 @@
     <section class="section-feature">
       <div class="container">
         <div class="row justify-content-between">
-          <div class="col-md-6 col-sm-12">
+          <div class="col-md-6 col-sm-12 col-content">
             <h2 class="section__title">
               Stay productive, wherever you are
             </h2>
-
             <p class="section__description">
               Never let location be an issue when accessing your files. Fylo has you
               covered for all of your file storage needs.
@@ -157,7 +120,7 @@
               </figcaption>
             </figure>
           </div>
-          <div class="col-md-5 offset-1 col-sm-12">
+          <div class="col-md-5 offset-1 col-sm-12 col-image">
             <img src="./images/illustration-2.svg" alt="" class="img-fluid">
           </div>
         </div>
