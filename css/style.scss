@@ -54,6 +54,8 @@ p {
 /* ----- Button & Form ----- */
 .form {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
     &__button {
         font-family: $raleway;
@@ -73,12 +75,34 @@ p {
     }
 
     &__input {
-        margin-right: 20px;
         padding: 12px 20px;
         color: $lightGray;
         border-radius: 5px;
         border: 1px solid #444;
+
+        &::invalid {
+            background-color: #ffdddd;
+        }
     }
+
+    &__input-wrapper {
+        position: relative;
+    }
+}
+
+.invalid-tooltip {
+    color: rgba(220, 53, 69, .9);
+    background-color: #fff;
+}
+
+.valid-tooltip {
+    color: rgba(25, 135, 84, .9);
+    background-color: #fff;
+}
+
+.invalid-feedback,
+.valid-feedback {
+    color: #fff;
 }
 
 .btn-text {
@@ -272,6 +296,22 @@ footer {
         }
     }
 
+    .section-cta {
+        &__form {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        input {
+            margin-bottom: 0;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+
+    }
+
     // Navbar
     .navbar-nav {
         flex-direction: row;
@@ -325,7 +365,12 @@ footer {
 
     // Form 
     .form {
-        &__input {
+        &__input-wrapper {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        &__button {
             flex: 2;
         }
     }
@@ -335,7 +380,7 @@ footer {
         flex-direction: row;
 
         li:nth-child(2) {
-            padding: 0 7px;
+            padding: 0 30px;
         }
     }
 
@@ -351,6 +396,7 @@ footer {
 
             button {
                 width: 50%;
+                margin-top: 20px;
             }
         }
     }
